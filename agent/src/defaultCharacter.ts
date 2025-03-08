@@ -1,5 +1,6 @@
 import { type Character, ModelProviderName } from "@elizaos/core";
-import twitterPlugin from "@elizaos-plugins/client-twitter";
+import twitterClientPlugin from "@elizaos-plugins/client-twitter";
+import twitterPlugin from "@elizaos-plugins/plugin-twitter";
 import autoPlugin from "@elizaos-plugins/client-auto";
 import { elfaPlugin } from "@elizaos/plugin-elfa";
 
@@ -7,7 +8,7 @@ import { elfaPlugin } from "@elizaos/plugin-elfa";
 export const defaultCharacter: Character = {
     name: "Eliza",
     username: "eliza",
-    plugins: [elfaPlugin, twitterPlugin, autoPlugin],
+    plugins: [elfaPlugin, twitterPlugin, twitterClientPlugin, autoPlugin],
     modelProvider: ModelProviderName.OPENAI,
     settings: {
         secrets: {
