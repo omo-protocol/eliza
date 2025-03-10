@@ -1,3 +1,12 @@
 [submodule "characters"]
 	path = characters
 	url = https://github.com/elizaos/characters
+[submodule "packages/client-twitter"]
+	path = packages/client-twitter
+	url = https://github.com/omo-protocol/client-twitter
+[submodule "packages/plugin-twitter"]
+	path = packages/plugin-twitter
+	url = https://github.com/omo-protocol/plugin-twitter
+[submodule "packages/client-auto"]
+	path = packages/client-auto
+	url = https://github.com/omo-protocol/client-auto

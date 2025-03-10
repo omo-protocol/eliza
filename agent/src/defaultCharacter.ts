@@ -1,14 +1,15 @@
 import { type Character, ModelProviderName } from "@elizaos/core";
-import twitterClientPlugin from "@elizaos-plugins/client-twitter";
-import twitterPlugin from "@elizaos-plugins/plugin-twitter";
-import autoPlugin from "@elizaos-plugins/client-auto";
+// Comment out problematic imports for now
+// import twitterClientPlugin from "../../packages/client-twitter/dist/index.js";
+// import twitterPlugin from "../../packages/plugin-twitter/dist/index.js";
+// import autoPlugin from "../../packages/client-auto/dist/index.js";
 import { elfaPlugin } from "@elizaos/plugin-elfa";
-
 
 export const defaultCharacter: Character = {
     name: "Eliza",
     username: "eliza",
-    plugins: [elfaPlugin, twitterPlugin, twitterClientPlugin, autoPlugin],
+    // Temporarily remove problematic plugins
+    plugins: [elfaPlugin], // Remove: twitterPlugin, twitterClientPlugin, autoPlugin
     modelProvider: ModelProviderName.OPENAI,
     settings: {
         secrets: {
